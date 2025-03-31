@@ -1,5 +1,6 @@
 proxy-groups:
   - name: 🚀 节点选择
+    include-all: true
     type: select
     proxies:
       - ♻️ 自动选择
@@ -20,6 +21,7 @@ proxy-groups:
     interval: 300
     tolerance: 50
   - name: 📲 电报消息
+    include-all: true
     type: select
     proxies:
       - 🚀 节点选择
@@ -33,6 +35,7 @@ proxy-groups:
       - 🚀 手动切换
       - DIRECT
   - name: 💬 OpenAi
+    include-all: true
     type: select
     proxies:
       - 🚀 节点选择
@@ -46,6 +49,7 @@ proxy-groups:
       - 🚀 手动切换
       - DIRECT
   - name: 📹 油管视频
+    include-all: true
     type: select
     proxies:
       - 🚀 节点选择
@@ -59,6 +63,7 @@ proxy-groups:
       - 🚀 手动切换
       - DIRECT
   - name: 🎥 奈飞视频
+    include-all: true
     type: select
     proxies:
       - 🚀 节点选择
@@ -86,6 +91,7 @@ proxy-groups:
       - 🇨🇳 台湾节点
       - 🇭🇰 香港节点
   - name: 🌍 国外媒体
+    include-all: true
     type: select
     proxies:
       - 🚀 节点选择
@@ -99,6 +105,7 @@ proxy-groups:
       - 🚀 手动切换
       - DIRECT
   - name: 🌏 国内媒体
+    include-all: true
     type: select
     proxies:
       - DIRECT
