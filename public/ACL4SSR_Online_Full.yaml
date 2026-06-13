@@ -34,6 +34,20 @@ proxy-groups:
       - 🇰🇷 韩国节点
       - 🚀 手动切换
       - DIRECT
+  - name: 📺 抖音
+    include-all: true
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - 🇸🇬 狮城节点
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
+      - DIRECT
   - name: 📲 长桥证券
     include-all: true
     type: select
@@ -363,6 +377,13 @@ rule-providers:
     interval: 86400
     format: text
     type: http
+  douyin:
+    url: https://ghfast.top/raw.githubusercontent.com/kenny8222/SUBWEB/refs/heads/main/public/douyin.list
+    path: ./ruleset/douyin.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
   longbridge:
     url: https://ghfast.top/raw.githubusercontent.com/kenny8222/SUBWEB/refs/heads/main/public/longbridge.list
     path: ./ruleset/longbridge.list
@@ -510,6 +531,7 @@ rules:
   - "RULE-SET,Microsoft,Ⓜ️ 微软服务"
   - "RULE-SET,Apple,🍎 苹果服务"
   - "RULE-SET,Telegram,📲 电报消息"
+  - "RULE-SET,douyin,📺 抖音"
   - "RULE-SET,longbridge,📲 长桥证券"
   - "RULE-SET,OpenAi,💬 OpenAi"
   - "RULE-SET,NetEaseMusic,🎶 网易音乐"
